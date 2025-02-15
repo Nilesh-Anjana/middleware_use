@@ -25,7 +25,7 @@ app.use(function(req,res,next){   //using global middleware
       
       if(numberofrequestforuser[userid]>5)
       {
-        res.status(404).send("kitni barr ayega bhai, kuch kam kr le");
+        res.status(429).send("kitni barr ayega bhai, kuch kam kr le");
       }
       else{
         next();  // user can access
